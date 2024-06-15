@@ -22,9 +22,14 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <Nav />
-          <div className="flex">
+          <div className="flex shadow-lg h-full">
+            <div className='w-2/12 h-full'>
             <SideBar />
+            </div>
+            <div className='w-10/12 h-full'>
+
             {children}
+            </div>
           </div>
         </ThemeProvider>
       </body>

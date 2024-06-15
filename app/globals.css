@@ -74,3 +74,13 @@
       @apply bg-background text-foreground;
     }
   }
+
+  /* body { */
+    /* height: 95vh; */
+    /* width: auto; */
+    /* background-color: green; */
+    /* border: 2px solid red */
+  /* } */
+  * {
+    box-sizing: border-box;
+  }

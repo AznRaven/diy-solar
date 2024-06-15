@@ -1,4 +1,5 @@
 "use client";
+import "../globals.css";
 
 import React, { useState } from "react";
 
@@ -34,75 +35,75 @@ const SolarStringVoltage = () => {
   }
 
   return (
-    <main className="flex flex-col border px-4 py-2 gap-2 w-full items-center">
+    <main className="flex flex-col px-4 py-2 gap-2 h-[95vh] items-center space-y-10">
       <h1 className="text-3xl mt-5 mb-10">Solar String Voltage</h1>
-      <section className="flex">
-        <div>
-          <div className="flex w-[50vw] justify-center">
+      <section className="flex w-full justify-around">
+        <div className='space-y-4'>
+          <div className="flex justify-center">
             <label className="w-60" htmlFor="min-mppt-volt">
               Minimum MPPT Voltage
             </label>
             <input
               value={minV}
               onChange={(e) => setMinV(parseFloat(e.target.value))}
-              className="border border-slate-500 text-center"
+              className="border border-slate-500 text-center px-4 py-1"
               type="number"
               id="min-mppt-volt"
             />
           </div>
-          <div className="flex w-[50vw] justify-center">
+          <div className="flex justify-center">
             <label className="w-60" htmlFor="max-mppt-volt">
               Maximum MPPT Voltage
             </label>
             <input
               value={maxV || ""}
               onChange={handleMaxVChange}
-              className="border border-slate-500 text-center"
+              className="border border-slate-500 text-center px-4 py-1"
               type="number"
               id="max-mppt-volt"
             />
           </div>
-          <div className="flex w-[50vw] justify-center">
+          <div className="flex justify-center">
             <label className="w-60" htmlFor="voc">
               Open Circuit Voltage <sub>VOC</sub>
             </label>
             <input
               value={voc || ""}
               onChange={handleVocChange}
-              className="border border-slate-500 text-center"
+              className="border border-slate-500 text-center px-4 py-1"
               type="number"
               id="voc"
             />
           </div>
         </div>
-        <div>
-          <div className="flex w-[50vw] justify-center">
+        <div className='space-y-4'>
+          <div className="flex justify-center">
             <label className="w-60" htmlFor="min-solar-panels">
               Minimum Solar Panels
             </label>
             <input
               value={minP || ""}
               readOnly
-              className="border border-slate-500 text-center"
+              className="border border-slate-500 text-center px-4 py-1"
               type="number"
               id="min-solar-panels"
             />
           </div>
-          <div className="flex w-[50vw] justify-center">
+          <div className="flex justify-center">
             <label className="w-60" htmlFor="max-solar-panels">
               Maximum Solar Panels
             </label>
             <input
               value={maxP || ""}
               readOnly
-              className="border border-slate-500 text-center"
+              className="border border-slate-500 text-center px-4 py-1"
               type="number"
               id="max-solar-panels"
             />
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center px-4 py-2 bg-slate-500 rounded-sm">
+      <section className="flex flex-col items-center px-4 py-2 bg-slate-500 rounded-sm text-white">
         <p>48V Offgrid System Recommended</p>
         <p>String Minimum: 220VOC</p>
       </section>
