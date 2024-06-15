@@ -74,7 +74,7 @@ const SolarStringVoltage = () => {
   }
 
   return (
-    <main className="flex flex-col px-4 py-2 gap-2 items-center space-y-5">
+    <main className="flex flex-col px-4 py-2 gap-2 items-center space-y-5 h-full">
       <h1 className="text-3xl mt-2 font-bold">Solar String Voltage</h1>
       {/* <p className="text-2xl">Solar Panels in Series</p> */}
       <div className="flex gap-2">
@@ -92,7 +92,7 @@ const SolarStringVoltage = () => {
                 <input
                   value={minV}
                   onChange={(e) => setMinV(parseFloat(e.target.value))}
-                  className="border border-slate-500 text-center px-4 py-1"
+                  className="border border-slate-500 text-center px-4 py-1  w-20 w-20"
                   type="number"
                   id="min-mppt-volt"
                 />
@@ -104,7 +104,7 @@ const SolarStringVoltage = () => {
                 <input
                   value={maxV || ""}
                   onChange={handleMaxVChange}
-                  className="border border-slate-500 text-center px-4 py-1"
+                  className="border border-slate-500 text-center px-4 py-1  w-20"
                   type="number"
                   id="max-mppt-volt"
                 />
@@ -116,7 +116,7 @@ const SolarStringVoltage = () => {
                 <input
                   value={voc || ""}
                   onChange={handleVocChange}
-                  className="border border-slate-500 text-center px-4 py-1"
+                  className="border border-slate-500 text-center px-4 py-1  w-20"
                   type="number"
                   id="voc"
                 />
@@ -130,7 +130,7 @@ const SolarStringVoltage = () => {
                 <input
                   value={minP || ""}
                   readOnly
-                  className="border border-slate-500 text-center px-4 py-1"
+                  className="border border-slate-500 text-center px-4 py-1  w-20"
                   type="number"
                   id="min-solar-panels"
                 />
@@ -142,7 +142,7 @@ const SolarStringVoltage = () => {
                 <input
                   value={maxP || ""}
                   readOnly
-                  className="border border-slate-500 text-center px-4 py-1"
+                  className="border border-slate-500 text-center px-4 py-1  w-20"
                   type="number"
                   id="max-solar-panels"
                 />

@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex shadow-lg h-fit  xl:h-full ">
+          <div className="flex shadow-lg h-full  xl:h-full ">
             <div className="w-2/12 h-full">
               <SideBar />
             </div>
