@@ -151,13 +151,13 @@ const SolarStringVoltage = () => {
           </section>
         </div>
 
-        <div>
+        <div className='hidden xl:block'>
           <h2 className="text-center text-2xl mb-3">
             Why is calculating the string voltage so important?
           </h2>
           <div className="grid gap-3 ">
             {reason.map((x, i) => (
-              <div className="border border-blue-300 rounded-md px-4 py-2 shadow-md shadow-blue-300 hidden sm:block">
+              <div className="border border-blue-300 rounded-md px-4 py-2 shadow-md shadow-blue-300">
                 <h3 className="text-center font-bold border-b-2">{x.title}</h3>
                 <p>{x.content}</p>
               </div>
