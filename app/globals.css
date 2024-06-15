@@ -75,12 +75,14 @@
     }
   }
 
-  /* body { */
-    /* height: 95vh; */
+  body {
+    height: 100vh;
+    /* margin-top: 5vh; */
     /* width: auto; */
     /* background-color: green; */
-    /* border: 2px solid red */
-  /* } */
+    /* border: 2px solid green; */
+    /* overflow: hidden; */
+  }
   * {
     box-sizing: border-box;
   }

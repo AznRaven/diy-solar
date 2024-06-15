@@ -21,15 +21,15 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <Nav />
-          <div className="flex shadow-lg h-full">
-            <div className='w-2/12 h-full'>
-            <SideBar />
+          <div className="flex shadow-lg h-fit  xl:h-full ">
+            <div className="w-2/12 h-full">
+              <SideBar />
             </div>
-            <div className='w-10/12 h-full'>
-
-            {children}
-            </div>
+            <div className="w-10/12 h-full">
+            <Nav />
+              
+              {children}
+              </div>
           </div>
         </ThemeProvider>
       </body>

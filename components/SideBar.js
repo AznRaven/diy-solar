@@ -18,11 +18,11 @@ const SideBar = () => {
     },
   ];
   return (
-    <nav className="px-4 h-[95vh] w-full shadow-lg">
-      <div className="flex justify-center py-10">
+    <nav className="h-full w-full shadow-lg ">
+      <div className="flex justify-center py-3">
         <ModeToggle />
       </div>
-      <ul className="flex flex-col gap-y-3 text-lg ml-10">
+      <ul className="flex flex-col text-lg ">
         {navList.map((x, i) => (
           <Link href={x.href}>
             <li className='px-4 py-2 hover:border-l-2 hover:border-red-500 '>{x.name}</li>
