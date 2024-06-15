@@ -36,7 +36,8 @@ const SolarStringVoltage = () => {
 
   return (
     <main className="flex flex-col px-4 py-2 gap-2 h-[95vh] items-center space-y-10">
-      <h1 className="text-3xl mt-5 mb-10">Solar String Voltage</h1>
+      <h1 className="text-3xl mt-5">Solar String Voltage</h1>
+      <p className='text-2xl'>Solar Panels in Series</p>
       <section className="flex w-full justify-around">
         <div className='space-y-4'>
           <div className="flex justify-center">
